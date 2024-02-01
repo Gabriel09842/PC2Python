@@ -21,6 +21,7 @@ while True:
             numImpares.append(numero)
     else:
         print('Ingrese una respuesta válida')
+        
 print("Números ingresados: ", numPares + numImpares)
 print(f"Números pares: {len(numPares)}")
 print(f"Números impares: {len(numImpares)}")
