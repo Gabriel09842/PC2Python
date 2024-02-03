@@ -3,18 +3,17 @@ Escribe una función de Python para calcular el factorial de un número (un ente
 función acepta el número como argumento."""
 def factorial(numero):
     if numero < 0:
-        return "El factorial no está definido para números negativos."
+        return "Ingrese un número positivo"
     elif numero == 0 or numero == 1:
         return 1
     else:
-        resultado = 1
+        acumular = 1
         for i in range(2, numero + 1):
-            resultado *= i
-        return resultado
+            acumular *= i
+        return acumular
 
-# Ejemplo de uso
-numero_ingresado = int(input("Ingrese un número entero no negativo: "))
+num = int(input("Ingrese un número entero: "))
 
-resultado_factorial = factorial(numero_ingresado)
+resultado = factorial(num)
 
-print(f"El factorial de {numero_ingresado} es: {resultado_factorial}")
+print(f"El factorial de {num} es: {resultado}")
