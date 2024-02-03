@@ -8,17 +8,16 @@ Ejemplo:
 - Input: Twitter Output: Twttr
 - Input: What's your name? Output: Wht's yr nm?
 """
-def omitir_vocales(cadena):
-    vocales = "aeiouAEIOU"
-    cadena_sin_vocales = ''
-    for char in cadena:
-        if char not in vocales:
-            cadena_sin_vocales += char
-    return cadena_sin_vocales
+def quitar_vocales(cadena):
+    resultado = ""
 
-texto_ingresado = input("Ingrese una cadena de texto: ")
+    for i in cadena:
+        if i.lower() not in ['a', 'e', 'i', 'o', 'u']:
+            resultado += i
+    return resultado
 
-resultado = omitir_vocales(texto_ingresado)
+input = input("Ingrese una cadena de texto: ")
+sin_vocales = quitar_vocales(input)
 
-print(f"Texto original: {texto_ingresado}")
-print(f"Texto con vocales omitidas: {resultado}")
+print(f"Texto original: {input}")
+print(f"Texto sin vocales: {sin_vocales}")

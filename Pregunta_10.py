@@ -32,7 +32,7 @@ meses = {
     "Diciembre": "12"
 }
 
-fecha_input = input("Ingrese la fecha (en formato mes-día-año o Mes dia, año): ")
+fecha_input = input("Ingrese la fecha (en formato mes/día/año o Mes dia, año): ")
 palabras = fecha_input.split()
 
 if '/' in fecha_input:
